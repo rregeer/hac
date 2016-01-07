@@ -8,7 +8,7 @@ var ResourceFactory, resourceFactory, sandbox;
 module.exports["Resource factory testst"] = {
   beforeEach: function beforeEach() {
     sandbox = sinon.sandbox.create();
-    ResourceFactory = require("../../lib/hal/ResourceFactory");
+    ResourceFactory = require("../../../lib/hal/ResourceFactory");
 
     resourceFactory = new ResourceFactory();
   },

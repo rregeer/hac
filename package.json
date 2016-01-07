@@ -1,8 +1,8 @@
 {
   "name": "hac",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Client to navigate over a HAL API",
-  "main": "HalClient.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rregeer/hac.git"
@@ -10,7 +10,8 @@
   "dependencies": {
     "bluebird": "3.0.x",
     "lodash": "3.10.x",
-    "url-template": "2.0.x"
+    "url-template": "2.0.x",
+    "request": "2.65.x"
   },
   "devDependencies": {
     "chai": "3.4.x",
@@ -22,7 +23,7 @@
     "jshint": "*"
   },
   "scripts": {
-    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports tests/unit/",
+    "test": "node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -u exports --recursive tests/unit/",
     "codestyle": "jscs lib/* tests/"
   },
   "keywords": [
